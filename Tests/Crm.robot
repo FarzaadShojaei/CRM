@@ -24,6 +24,9 @@ Should be able to add new customer
     Set window position       x=341   y=169
     Set window size           width=1935   height=1090
 
+
+    click link                css=#SignIn
+
     sleep                     3s
     close browser
 
