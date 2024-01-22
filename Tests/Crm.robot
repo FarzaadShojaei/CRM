@@ -24,8 +24,16 @@ Should be able to add new customer
     Set window position       x=341   y=169
     Set window size           width=1935   height=1090
 
+    page should contain       Customers Are priority One
 
-    click link                css=#SignIn
+
+    click link                id=SignIn
+    page should contain       Login
+
+    input text                id=email-id         admin@robotframeworktutorial.com
+    input text                id=password         qwe
+    click button              id=submit-id
+    page should contain       Our Happy Customers
 
     sleep                     3s
     close browser
